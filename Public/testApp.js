@@ -2,18 +2,16 @@ const express = require('express');
 
 const app = express();
 
-app.use('/assets', express.static('assets'));
+app.use(express.static('Public'));
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/home.html');
 });
 
 app.get('/contact', (req, res) => {
-    res.send('Hello from Contact Page');
+    res.sendFile(__dirname + '/contact.html');
 });
-
-
 
 
 app.listen(3000);
