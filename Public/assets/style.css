@@ -24,5 +24,9 @@ p {
     padding: 10px;
     text-decoration: none;
     color: initial;
+    display: inline-block;
+}
+
+.link-button {
     text-align: center;
 }
