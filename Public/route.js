@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/contact.html');
+    console.log('suck it');
 });
 
 
